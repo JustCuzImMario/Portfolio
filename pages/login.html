@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@300;400&display=swap" rel="stylesheet">
+        <link href="../Webpage1/app.css" rel="stylesheet"/>
+    </head>
+    
+    <div class="topnav">
+        <a href="../styleguide.html">Style Guide</a>
+        <a href="../pages/home.html">Home Page</a>
+        <a href="../pages/contact.html">Contact</a>
+        <a href="../pages/about.html">About</a>
+        <a class="active" href="../pages/login.html">Login</a>
+
+    </div>
+    
+    <header>Login Page</header>
+
+    <body>
+
+        <script>
+            function userlogin() 
+            {
+
+                var un=document.forms["loginform"]["uname"].value;
+                var pass=document.forms["loginform"]["pwd"].value;
+
+                if(un=="pflood")
+                {
+                    if(pass=="011794")
+                    {
+                        alert("correct information. Successful login.")
+
+                    }
+
+                    else
+                    {
+                        alert("username and password combination incorrect.")
+
+                    }
+
+                
+                }
+                else
+                {
+                    alert("username and password combination incorrect.")
+                }
+
+
+            }
+
+
+        </script>
+
+        <form name = "loginform">
+            Username:<input type="text" name="uname"><br>
+            Password:<input type="password" name="pwd"><br>
+            <button type="submit">Submit</button>
+
+
+        </form>
+        <script>
+
+            document.getElementsByClassName("button").onclick = userlogin()
+        
+
+        </script>
+
+
+
+
+    </body>
+
+    </html>

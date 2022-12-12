@@ -1,0 +1,146 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Home</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://kit.fontawesome.com/e65ab22330.js" crossorigin="anonymous"></script>  
+        <link href="../main.css" rel="stylesheet"/>
+
+    </head>
+       
+    <style>
+        
+        .topnav {
+            overflow: hidden;
+            background-color: #254E5C;
+        }
+        
+        .topnav a {
+            font-family: 'Catamaran', sans-serif;
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            padding: 12px 14px;
+            font-size: 15px;
+        }
+
+        .topnav b {
+            font-family: 'Catamaran', sans-serif;
+            float: right;
+            display: block;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            padding: 12px 14px;
+            font-size: 15px;
+        }
+        
+        .topnav a:hover {
+            color: #F0BB73;
+        }
+        
+        .topnav a.active {
+            color: #F0BB73;
+            background-color: #0e2c42;
+        }
+        
+        .topnav .icon {
+            display: none;
+        }
+        .topnav b:hover {
+            color: #C0E09F;
+            cursor: pointer;
+        }
+        
+        .topnav b.active {
+            color: #C0E09F;
+            background-color: #0e2c42;
+        }
+        
+        
+        @media screen and (max-width: 740px) {
+            .topnav a:not(:first-child) {display: none;}
+            .topnav a.icon {
+                float: right;
+                display: block;
+            }
+        }
+        
+        @media screen and (max-width: 740px) {
+            .topnav.responsive {position: relative;}
+            .topnav.responsive .icon {
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+            .topnav.responsive a {
+            float: none;
+            display: block;
+            text-align: left;
+            }
+        }
+        
+    </style>
+
+
+    <div class="topnav" id="topnav">
+        <a href="../pages/home.html" role="navigation" tabindex="0" aria-label="Main" ><i class="fa fa-fw fa-home fa-xl"></i></a>
+        <a href="../pages/contact.html" tabindex="2">Contact</a>
+        <a href="../pages/about.html" tabindex="3">About</a>
+        <a href="../pages/skills.html" tabindex="4">Skills</a>
+        <a href="../pages/work.html" tabindex="5">Work</a>
+        <a href="../pages/extra.html" tabindex="6">Extra</a>
+        <b class="links" href="https://github.com/JustCuzImMario" tabindex="7"><i class="fa-brands fa-github fa-xl"></i></b>
+        <b class="links" href="mailto: programming.pf@gmail.com" tabindex="8"><i class="fa-brands fa-google fa-xl"></i></b>
+        <b class="links" href="https://twitter.com/JstCuzImMario" tabindex="9"><i class="fa-brands fa-twitter fa-xl"></i></b>
+        <b class="links" href="https://twitter.com/JstCuzImMario" tabindex="10"><i class="fa-brands fa-linkedin fa-xl"></i></b>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("topnav");
+            if (x.className === "topnav") {x.className += " responsive";} else {x.className = "topnav";}
+        }
+    </script>
+    
+
+
+    <header id="headerContainer" class="masthead">
+        <div class="h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-12 text-center">
+                    <h1 class="masthead2">Hey, I'm Patrick Flood.</h1>
+                    <h3 class="subtitle">Front End Developer & Website Designer</h3>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    
+    <div class="containerHome">
+        <div class="row">
+                <div id="column1" class="col-md-9" style="background-color: #178F8C;">
+                    <h2>Welcome To My Portfolio</h2>
+                    <p>This website is a quick tour of my life, current ambitions, and programming projects. This is just a small sampling of what I have been up to in the world of software development. I've had the incredible opportunity to program alongside great colleagues and under excellent mentors. This is my (continuous) attempt to putting my 'best foot forward' in the software development industry.</p>
+                    <p>I think it goes without saying that this site is perpetually 'under construction'. Come back frequently to catch any updates to my life happenings and projects! </p>
+                </div>
+
+
+            <div id="buttonCol"class="col-md-3">
+                <button id="buttonCol1" type="button" href="../pages/contact.html" class="btn-default btn-lg btn-block">Shoot Me a Message</button>
+                <button id="buttonCol1" type="button" href="../pages/work.html" class="btn-default btn-lg btn-block">Check Out My Experience</button>
+            </div>
+
+        </div>
+    </div>
+
+   
+</html>

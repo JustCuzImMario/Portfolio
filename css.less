@@ -1,0 +1,237 @@
+
+// Color Scheme Variables
+@navy:#0e2c42;
+@bluegray:#254E5C;
+@tealgreen:#178F8C;
+@softlime:#C0E09F;
+@lightorange:#F0BB73;
+
+header.masthead{
+
+    #mastheadTitle{
+        font-family: 'Montserrat', sans-serif;
+        font-style: bolder;
+        font-size: 72px;
+        border-color: @tealgreen;
+    }
+}
+
+.loginButton{
+    .button1 {
+        background-color: yellow;
+        border-radius: 8px;
+        padding: 10px;
+        color: @bluegray;
+        transition-duration: 0.2s;
+        border: 2px solid @bluegray;
+    }
+    
+    .button1:hover {
+        background-color: @bluegray; 
+        color: white;
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    }
+}
+
+
+h1{
+    font-family: 'Montserrat', sans-serif;
+    font-style: bolder;
+    font-size: 36px;
+}
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 28px;
+}
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 200;
+
+}
+
+
+
+.button2 {
+    background-color: white;
+    border-radius: 8px;
+    padding: 10px;
+    color: black;
+    transition-duration: 0.2s;
+    border: 2px solid @tealgreen;
+}
+
+.button2:hover {
+    background-color: @tealgreen; 
+    color: white;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.inputLabel {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+input.inputField {
+    padding: 5px;
+    border: 1px solid @tealgreen;
+}
+
+div.box {
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    margin: 0 10px 0 10px;
+}
+
+#primary1 {
+    background-color: @navy;
+}
+
+#primary2 {
+    background-color: @bluegray;
+}
+
+#primary3 {
+    background-color: @tealgreen;
+}
+#primary4 {
+    background-color: @softlime;
+}
+#primary5 {
+    background-color: @lightorange;
+}
+
+.warning {
+    background-color: rgb(246, 246, 172);
+    font-weight: bold;
+    font-style: italic;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.danger {
+    background-color: rgb(240, 156, 156);
+    font-weight: bold;
+    font-style: italic;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.success {
+    background-color: rgb(196, 244, 196);
+    font-weight: bold;
+    font-style: italic;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+svg.svg-inline--fa {
+    color: @lightorange;
+}
+
+.spacer {
+    margin-top: 25px;
+}
+
+#footer {
+    border-top: 1px solid #dddddd;
+    margin-top: 50px;
+    padding: 10px;
+    text-align: center;
+}
+.topnav {
+    background-color: @bluegray;
+    overflow: hidden;
+    position: relative;
+}
+
+.topnav a {
+    float: left;
+    color:rgb(255, 255, 255);
+    text-align: center;
+    text-decoration: none;
+    padding: 14px 16px;
+    font-size: 17px;
+   
+}
+
+.topnav a:hover {
+    color: @lightorange;
+}
+
+.topnav a.active {
+    color: @lightorange;
+    background-color: @navy;
+}
+
+.topnav::before {
+    content: "";
+    display: block;
+    height: 5px;
+    background-color: #1979b1;
+
+    position: absolute;
+    top: 0;
+    width: 0%;
+
+    transition: all ease-in-out 250ms;
+}
+
+.topnav {
+    overflow: hidden;
+    font-family: 'Catamaran', sans-serif;
+    background-color: @bluegray;
+}
+
+.topnav a {
+    font-family: 'Catamaran', sans-serif;
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 12px 14px;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.topnav a:hover {
+    color: @lightorange;
+}
+
+.topnav a.active {
+    color: @lightorange;
+    background-color: @navy;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}

@@ -1,0 +1,185 @@
+<!doctype html>
+<html>
+    <head>
+        <title>About</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://kit.fontawesome.com/e65ab22330.js" crossorigin="anonymous"></script>  
+        <link href="../main.css" rel="stylesheet"/>
+
+    </head>
+       
+    <style>
+        
+        .topnav {
+            overflow: hidden;
+            background-color: #254E5C;
+        }
+        
+        .topnav a {
+            font-family: 'Catamaran', sans-serif;
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            padding: 12px 14px;
+            font-size: 15px;
+        }
+
+        .topnav b {
+            font-family: 'Catamaran', sans-serif;
+            float: right;
+            display: block;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            padding: 12px 14px;
+            font-size: 15px;
+        }
+        
+        .topnav a:hover {
+            color: #F0BB73;
+        }
+        
+        .topnav a.active {
+            color: #F0BB73;
+            background-color: #0e2c42;
+        }
+        
+        .topnav .icon {
+            display: none;
+        }
+        .topnav b:hover {
+            color: #C0E09F;
+            cursor: pointer;
+        }
+        
+        .topnav b.active {
+            color: #C0E09F;
+            background-color: #0e2c42;
+        }
+        
+        
+        @media screen and (max-width: 740px) {
+            .topnav a:not(:first-child) {display: none;}
+            .topnav a.icon {
+                float: right;
+                display: block;
+            }
+        }
+        
+        @media screen and (max-width: 740px) {
+            .topnav.responsive {position: relative;}
+            .topnav.responsive .icon {
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+            .topnav.responsive a {
+            float: none;
+            display: block;
+            text-align: left;
+            }
+        }
+        
+    </style>
+
+
+    <div class="topnav" id="topnav">
+        <a href="../pages/home.html" role="navigation" tabindex="0" aria-label="Main" ><i class="fa fa-fw fa-home fa-xl"></i></a>
+        <a href="../pages/contact.html" tabindex="2">Contact</a>
+        <a href="../pages/about.html" tabindex="3">About</a>
+        <a href="../pages/skills.html" tabindex="4">Skills</a>
+        <a href="../pages/work.html" tabindex="5">Work</a>
+        <a href="../pages/extra.html" tabindex="6">Extra</a>
+        <b class="links" href="https://github.com/JustCuzImMario" tabindex="7"><i class="fa-brands fa-github fa-xl"></i></b>
+        <b class="links" href="mailto: programming.pf@gmail.com" tabindex="8"><i class="fa-brands fa-google fa-xl"></i></b>
+        <b class="links" href="https://twitter.com/JstCuzImMario" tabindex="9"><i class="fa-brands fa-twitter fa-xl"></i></b>
+        <b class="links" href="https://twitter.com/JstCuzImMario" tabindex="10"><i class="fa-brands fa-linkedin fa-xl"></i></b>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("topnav");
+            if (x.className === "topnav") {x.className += " responsive";} else {x.className = "topnav";}
+        }
+    </script>
+
+    <div id="headerContainer" class="containerAboutHeader">
+        <div class="row">
+            <div class="col-md-12" style="margin-top: 10px;">
+                <h1>All about Mr. Dr. Professor Patrick*</h1>
+            </div>
+            <div class="col-s-1">
+                <h3 class="about"></h3>
+                    <a class="linkAboutHeader" href="https://youtu.be/mq7VgZAhk28" target="_blank" style="margin: none;">*Not really a Dr. or a Professor**.</a>
+                </h3>
+            </div>
+            <div id="aboutSubHeader" class="col-s-1">
+                <h3 class="about">
+                    <a class="linkAboutHeader" href="https://youtu.be/wXe-5mUeLC8" target="_blank" style="margin: none;">**Maybe someday...</a>
+                </h3>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="containerAbout">
+        <div class="row">
+            <div id="picCol" class="col-md-6" style="margin-top: 25px;">
+                <img id="imgL" src="../images/IMG_2926.jpg" width="400" height="500">
+            </div>
+            <div class="col-md-6" style="margin-top: 25px;">
+                <h2>"To make an embarrassing admission, I like video games. That's what got me into software engineering when I was a kid. I wanted to make money so I could buy a better computer to play better video games - nothing like saving the world."</h2>
+                <h2>--Elon Musk</h2>
+                <p>My life may not relate much to the billionaire genius Elon Musk but he has me here. I am a gamer and that aspect of my life has played a signinficant role in my interest in programming - as well as my determination to master certain skills of software development.</p>
+            </div>
+        </div>
+       
+        <div class="row">
+            <div class="col-md-6" style="margin-top: 25px;">
+                <h2>"Get along, on down the road we've got a long, long way to go. Scared to live, scared to die, we ain't perfect but we try. Get along while we can, always give love the upper hand." </h2>
+                <h2>--Kenny Chesney</h2>
+                <p>Etc Etc Etc 
+                </p>
+            </div>
+            <div id="picCol" class="col-md-6" style="margin-top: 25px;">
+                <img id="imgR" src="../images/img1234.png" width="400" height="500">
+            </div>
+        </div>
+
+        <div class="row">
+            <div id="picCol" class="col-md-6" style="margin-top: 25px;">
+                <img id="imgL" src="../images/IMG_0113.JPG" width="400" height="500">
+            </div>
+            <div class="col-md-6" style="margin-top: 25px;">
+                <h2>“Instead of focusing on the world’s problems, give your attraction and energy to trust, love, abundance, education, and peace.”</h2>
+                <h2>--Rhonda Byrne</h2>
+                <p>Etc Etc Etc 
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6" style="margin-top: 25px;">
+                <h2>“Whether you think you can, or you think you can't--you're right.”</h2>
+                <h2> --Henry Ford</h2>
+                <br>
+                <p>I am a full time Masters student of software development. I am a proficient programmer and self-motivator. The key to this is consistent optimism while striving for hard work and production. If you want someone that knows how to handle a heavy workload with ease, then I am your guy. I am hungry for opportunity and growth. Programming has helped me dig deep and access my creative side. 
+                </p>
+                <p>I will continue to strive for greatness, constantly use my unique abilities and skills, and never stop watching out for others. In regards to my own perspective about success: The greatest weapon we have for this, is our mind. I convince myself everyday that "today will be a good day" and it usually turns out that way.
+                </p>
+            </div>
+            <div id="picCol" class="col-md-6" style="margin-top: 25px;">
+                <img id="imgR" src="../images/img123.png" width="400" height="530">
+            </div>
+        </div>
+        
+    </div>
+
+</html>

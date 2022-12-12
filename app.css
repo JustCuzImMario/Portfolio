@@ -1,0 +1,123 @@
+header, footer { 
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+body { 
+	font-family: 'Barlow Semi Condensed', sans-serif;
+	line-height: 1.88889;
+	color: #555753;
+    background-color: rgb(255, 255, 255); 
+	margin: 0; 
+	padding: 10px;
+    
+	}
+/*
+using a "." is accessing the class as assigned in index.html
+
+Also .subheader is h2
+*/
+
+th, td {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+table, th, td {
+    border: 10px solid white;
+    border-collapse: collapse;
+  }
+  th, td {
+    background-color: #91c7e6;
+  }
+
+.subheader1 {
+    color: #1979b1;
+    font-weight: bold;
+    font-size: 75px;
+    text-align: center;
+
+}
+
+.subheader2 {
+    color: #1979b1;
+    font-weight: bold;
+    font-size: 120px;
+    text-align: center;
+
+}
+
+
+p{
+    
+    display:block;
+    text-align: left;
+    font-size: 35px;
+    font-weight: bold;
+
+    
+   }
+
+aside{
+    display: inline-block;
+
+}
+
+.topnav {
+    background-color: #065787;
+    overflow: hidden;
+    position: relative;
+}
+
+.topnav a {
+    float: left;
+    color:rgb(255, 255, 255);
+    text-align: center;
+    text-decoration: none;
+    padding: 14px 16px;
+    font-size: 17px;
+   
+}
+
+.topnav a:hover {
+    background-color:#91c7e6;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: rgb(247, 243, 239);
+    color: #065787;
+}
+.topnav::before {
+    content: "";
+    display: block;
+    height: 5px;
+    background-color: #1979b1;
+
+    position: absolute;
+    top: 0;
+    width: 0%;
+
+    transition: all ease-in-out 250ms;
+
+}
+
+input#in#inputHiddenContent1, #inputShownContent1 {
+    display: none;
+  }
+  
+  span#spanHiddenContent1 {
+    display: none;
+  }
+  
+  input#inputShownContent1:checked ~ span#spanHiddenContent1 {
+    display: block;
+  }
+  
+  input#inputHiddenContent1:checked ~ span#spanHiddenContent1 {
+    display: none;
+  }
+  
+  input#inputShownContent1:checked ~ #myReadMore a {
+    display: none;
+  }
